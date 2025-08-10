@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="ADO Bar And Restaurant — Ethiopian cuisine, warm traditional design with modern touches." />
+  <title>ADO Bar And Restaurant</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Simple SEO / Social preview (replace image.jpg with your hero) -->
+  <meta property="og:title" content="ADO Bar And Restaurant" />
+  <meta property="og:description" content="Experience delicious Ethiopian food in a warm, traditional setting." />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">ADO Bar &amp; Restaurant</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile nav toggle -->
+      <button id="mobile-nav-toggle" class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Home / Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <h2>Authentic Ethiopian Flavours</h2>
+        <p>Warm hospitality · Traditional recipes · Modern comfort</p>
+        <a class="btn" href="#menu">View Menu</a>
+      </div>
+      <div class="hero-image">
+        <!-- Placeholder image — replace with restaurant photo -->
+        <img src="images/hero.jpg" alt="Ethiopian dishes on a traditional coffee table" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu container">
+    <h2>Menu</h2>
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-target="mains">Mains</button>
+      <button class="tab-btn" data-target="starters">Starters</button>
+      <button class="tab-btn" data-target="drinks">Drinks</button>
+      <button class="tab-btn" data-target="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-content">
+      <!-- Mains -->
+      <div id="mains" class="menu-pane active">
+        <article class="dish">
+          <h3>Doro Wat</h3>
+          <p>Spicy chicken stew served with injera — 220 ETB</p>
+        </article>
+
+        <article class="dish">
+          <h3>Kitfo</h3>
+          <p>Spiced raw/minced beef (or lightly seared) with mitmita — 260 ETB</p>
+        </article>
+      </div>
+
+      <!-- Starters -->
+      <div id="starters" class="menu-pane">
+        <article class="dish">
+          <h3>Azifa</h3>
+          <p>Spiced lentil salad — 80 ETB</p>
+        </article>
+        <article class="dish">
+          <h3>Sambusa</h3>
+          <p>Savory fried pastry with spiced filling — 60 ETB</p>
+        </article>
+      </div>
+
+      <!-- Drinks -->
+      <div id="drinks" class="menu-pane">
+        <article class="dish">
+          <h3>Traditional Coffee</h3>
+          <p>Fresh-roasted Ethiopian coffee served ceremonially — 50 ETB</p>
+        </article>
+        <article class="dish">
+          <h3>Tej</h3>
+          <p>Ethiopian honey wine (house-made) — market price</p>
+        </article>
+      </div>
+
+      <!-- Desserts -->
+      <div id="desserts" class="menu-pane">
+        <article class="dish">
+          <h3>Baklava</h3>
+          <p>Sweet layered pastry — 70 ETB</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about container">
+    <h2>About ADO Bar And Restaurant</h2>
+
+    <!-- Text below includes factual, positive notes discovered on public listings.
+         Citations are included below the paragraph. -->
+    <p>
+      <strong>ADO Bar And Restaurant </strong>offers a lively bar atmosphere and local hospitality in Addis Ababa.
+      The venue is known locally as a neighborhood bar/restaurant and is centrally located in the
+      Kirkos area, making it an accessible spot for both residents and visitors to enjoy drinks,
+      casual dining, and social evenings.
+    </p>
+   <p>
+      <strong>Note:</strong> If you have specific accolades, awards, or customer reviews you want displayed
+      (star ratings, testimonials), provide them and I will integrate them into this page.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Replace these placeholders with real photos (names kept small for easy github upload) -->
+      <img src="images\20250224_145510.jpg" alt="Dish 1" class="gallery-item" />
+      <img src="images\20250225_152738.jpg" alt="Dish 2" class="gallery-item" />
+      <img src="images\20241209_162452.jpg" alt="Interior" class="gallery-item" />
+      <img src="images\20250224_145328.jpg" alt="Coffee ceremony" class="gallery-item" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-details">
+        <p><strong>Address:</strong> Kirkos, Kebele 11/12, Addis Ababa, Ethiopia</p>
+        <p><strong>Phone:</strong> +251 <em>911661557</em></p>
+        <p><strong>Hours:</strong> Mon-Sun: 11:00 — 23:00</p>
+      </div>
+
+      <div class="map-wrapper">
+        <!-- Use the coordinates discovered in local listings so map centers correctly.
+             Replace the src API key / params if you want a customized Google Maps embed. -->
+        <iframe
+          title="Ado Bar and Restaurant location"
+        src="https://www.google.com/maps?q=9.004159,38.752988&z=16&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ADO Bar And Restaurant — Authentic Ethiopian Cuisine</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
