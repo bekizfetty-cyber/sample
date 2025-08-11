@@ -31,7 +31,7 @@ html,body{margin:0;padding:0;font-family: "Segoe UI", Roboto, system-ui, -apple-
 .hero-text h2{font-size:2rem;margin:0 0 0.5rem;color:var(--accent-dark)}
 .hero-text p{margin:0 0 1rem;color:var(--muted)}
 .btn{display:inline-block;background:var(--accent);color:white;padding:0.6rem 1rem;border-radius:8px;text-decoration:none}
-.hero-image img{max-width:350px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12)} /* Updated max-width */
+.hero-image img{max-width:300px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12)} /* Updated max-width */
 
 /* Menu */
 .menu h2, .about h2, .gallery h2, .contact h2{margin-top:1.5rem;color:var(--accent-dark)}
